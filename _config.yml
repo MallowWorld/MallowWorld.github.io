@@ -26,18 +26,53 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
+# Collections settings
+collections_dir: collections
+collections:
+  drafts:
+    title: Drafts
+    output: false
+  posts:
+    title: Posts
+    output: true
+    permalink: "/posts/:path"
+  services:
+    title: Services
+    output: true
+    permalink: "/services/:path"
+  products:
+    title: Products
+    output: true
+    permalink: "/products/:path"
+  categories:
+    title: Categories
+    output: false
+  shops:
+    title: Shops
+    output: false
+  features:
+    title: Features
+    output: false
+  team:
+    title: Team
+    output: true
+    permalink: "/about/:path"
+  uploads:
+    title: Uploads
+    output: true
+
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE
+  - README.md
+  - CNAME

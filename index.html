@@ -7,6 +7,7 @@ hero_image: images/hero_1.jpg
 ---
 {% include welcome.html %}
 
+{% if site.services.size > 0 %}
 <div class="site-section">
   <div class="container">
     <div class="row">
@@ -34,9 +35,11 @@ hero_image: images/hero_1.jpg
     </div>
   </div>
 </div>
+{% endif %}
 
 {% include sale.html %}
 
+{% if site.features.size > 0 %}
 <div class="site-section bg-image overlay features_75651" style="background-image: url('{{ site.baseurl }}/{{ page.hero_image }}')">
   <div class="container">
     <div class="row">
@@ -61,7 +64,9 @@ hero_image: images/hero_1.jpg
     </div>
   </div>
 </div>
+{% endif %}
 
+{% if site.testimonials.size > 0 %}
 <div class="site-section">
   <div class="text-center">
     <h2 class="heading-border-bottom font-weight-bold serif text-black mb-5 text-center">Testimonials</h2>
@@ -88,5 +93,6 @@ hero_image: images/hero_1.jpg
     <a href="#" class="btn btn-primary custom-next">Next</a>
   </div>
 </div>
+{% endif %}
 
 {% include testimonial.html %}

@@ -1,0 +1,13 @@
+{% if site.data.sale.enabled %}
+<div class="site-section services_294491">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="serif text-white font-weight-bold text-primary">{{ site.data.sale.title }}</h2>
+        <p class="lead">{{ site.data.sale.description }}</p>
+        <p><a href="{{ site.data.sale.url }}" class="btn btn-primary">{{ site.data.sale.label }}</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

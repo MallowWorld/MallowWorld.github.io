@@ -1,0 +1,7 @@
+enabled: true
+title: Jean Doe
+subtitle: Spa Customer
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, illo.
+images:
+  - images/about_1.jpg
+  - images/about_2.jpg

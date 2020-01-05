@@ -1,0 +1,21 @@
+- title: Home
+  url: /
+  footer: true
+
+- title: About
+  url: /about/
+  footer: true
+
+- title: Services
+  url: /services/
+  footer: true
+
+- title: Gallery
+  url: /gallery/
+
+- title: Blog
+  url: /blog/
+
+- title: Contact
+  url: /contact/
+  footer: true

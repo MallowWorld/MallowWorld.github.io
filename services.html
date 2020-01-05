@@ -1,0 +1,32 @@
+---
+title: Services
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+  veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.
+layout: page
+permalink: /services/
+image: images/hero_3.jpg
+---
+<div class="site-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="heading-border-bottom font-weight-bold serif text-black mb-5 text-center">Our Services</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% for service in site.services %}
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-5">
+        <div class="service_13987">
+          <a href="{{ service.url | prepend: site.baseurl }}" class="mb-3 d-block"><img src="{{ site.baseurl }}/{{ service.image }}" alt="{{ service.title }}" class="img-fluid"></a>
+          <div class="text">
+            <h3 class="serif mb-3">{{ service.title }}</h3>
+            <p>{{ service.content | markdownify }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% include sale.html %}

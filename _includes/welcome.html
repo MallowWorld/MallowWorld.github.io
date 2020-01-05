@@ -1,0 +1,36 @@
+{% if site.data.welcome.enabled %}
+<div class="site-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 mr-auto">
+        <h2 class="serif font-weight-bold mb-3">{{ site.data.welcome.title }}</h2>
+        <p class="font-weight-bold">{{ site.data.welcome.subtitle }}</p>
+        <p>{{ site.data.welcome.description }}</p>
+        <div class="social_29128">
+          {% if site.twitter_username %}
+          <a href="https://twitter.com/{{ site.twitter_username }}"><span class="icon-twitter"></span></a>
+          {% endif %}
+          {% if site.instagram_username %}
+          <a href="https://www.instagram.com/{{ site.instagram_username }}"><span class="icon-instagram"></span></a>
+          {% endif %}
+          {% if site.facebook_username %}
+          <a href="https://www.facebook.com/{{ site.facebook_username }}"><span class="icon-facebook"></span></a>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <a href="https://www.linkedin.com/{{ site.linkedin_username }}"><span class="icon-linkedin"></span></a>
+          {% endif %}
+          {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}"><span class="icon-github"></span></a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-center">
+          <div class="bg-img-1 mr-md-4" style="background-image: url('{{ site.baseurl }}/{{ site.data.welcome.images[0] }}');"></div>
+          <div class="bg-img-1 mt-md-5" style="background-image: url('{{ site.baseurl }}/{{ site.data.welcome.images[1] }}');"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

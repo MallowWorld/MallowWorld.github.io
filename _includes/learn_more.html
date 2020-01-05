@@ -1,0 +1,18 @@
+{% if site.data.learn_more.enabled %}
+<div class="site-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="img-years">
+          <img src="{{ site.baseurl }}/{{ site.data.learn_more.image }}" alt="Image" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-5 ml-auto pl-lg-5 text-center">
+        <h2 class="heading-border-bottom font-weight-bold serif text-black mb-5 text-center">{{ site.data.learn_more.title }}</h2>
+        <p class="mb-5 lead">{{ site.data.learn_more.description }}</p>
+        <p><a href="{{ site.data.learn_more.url }}" class="btn btn-primary">{{ site.data.learn_more.label }}</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

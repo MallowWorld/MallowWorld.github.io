@@ -1,0 +1,20 @@
+{% if site.data.testimonial.enabled %}
+<div class="site-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 mr-auto">
+        <blockquote class="testimonial_38201">
+          <p class="serif h3 font-weight-bold testimonial_38201"><span class="text-primary">&ldquo;</span>{{ site.data.testimonial.description }}<span class="text-primary">&rdquo;</span></p>
+          <p>&mdash; {{ site.data.testimonial.title }}, <span class="text-muted">{{ site.data.testimonial.subtitle }}</span></p>
+        </blockquote>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-center">
+          <div class="bg-img-1 mr-md-4 mt-md-5" style="background-image: url('{{ site.baseurl }}/{{ site.data.testimonial.images[0] }}');"></div>
+          <div class="bg-img-1" style="background-image: url('{{ site.baseurl }}/{{ site.data.testimonial.images[1] }}');"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

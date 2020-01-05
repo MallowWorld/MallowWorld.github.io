@@ -1,0 +1,26 @@
+---
+title: Gallery
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+  veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.
+layout: page
+permalink: /gallery/
+image: images/hero_1.jpg
+---
+<div class="site-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="heading-border-bottom font-weight-bold serif text-black mb-5 text-center">See Our galleries</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% for image in site.images %}
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-5">
+        <a href="{{ site.baseurl }}/{{ image.image }}" data-fancybox="gal" class=""><img src="{{ site.baseurl }}/{{ image.image }}" alt="{{ image.title }}" class="img-fluid"></a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% include sale.html %}

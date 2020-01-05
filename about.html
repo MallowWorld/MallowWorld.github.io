@@ -1,0 +1,35 @@
+---
+title: About Us
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+  veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.
+layout: page
+permalink: /about/
+image: images/hero_2.jpg
+---
+{% include welcome.html %}
+
+<div class="site-section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="heading-border-bottom font-weight-bold serif text-black mb-5 text-center">Our Team</h2>
+      </div>
+    </div>
+    <div class="row align-items-stretch">
+      {% for person in site.team %}
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="post-entry-1 h-100 person-1">
+          <img src="{{ site.baseurl }}/{{ person.image }}" alt="{{ person.name }}" class="img-fluid">
+          <div class="post-entry-1-contents">
+            <span class="meta">{{ person.title }}</span>
+            <h2>{{ person.name }}</h2>
+            <p>{{ person.content | markdownify }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% include learn_more.html %}

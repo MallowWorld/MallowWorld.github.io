@@ -1,4 +1,4 @@
 ---
 title: Image 9
-image: images/img_4.jpg
+image: images/watercolor_drawings_9.jpg
 ---

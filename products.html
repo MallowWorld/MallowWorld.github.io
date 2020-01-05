@@ -1,0 +1,32 @@
+---
+title: Products
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+  veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.
+layout: minimal
+permalink: /products/
+hero_image: images/feature1.jpg
+---
+<div class="site-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="heading-border-bottom font-weight-bold serif text-black mb-5 text-center">See a list of my products</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% for product in site.products %}
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-5">
+        <div class="service_13987">
+          <a href="{{ product.url | prepend: site.baseurl }}" class="mb-3 d-block"><img src="{{ site.baseurl }}/{{ product.image }}" alt="{{ product.title }}" class="img-fluid"></a>
+          <div class="text">
+            <h3 class="serif mb-3">{{ product.title }}</h3>
+            <p>{{ product.content | markdownify }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% include sale.html %}

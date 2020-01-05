@@ -1,5 +1,4 @@
 ---
 title: Image 5
-image: images/img_5.jpg
-published: false
+image: images/watercolor_drawings_5.jpg
 ---

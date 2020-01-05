@@ -1,5 +1,5 @@
 ---
-title: Spa Which You Love
+title: Follow the Mallow
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
   veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.
 layout: home
@@ -11,17 +11,17 @@ hero_image: images/feature1.jpg
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="heading-border-bottom font-weight-bold serif text-black mb-5 text-center">Our Services</h2>
+        <h2 class="heading-border-bottom font-weight-bold serif text-black mb-5 text-center">My Products</h2>
       </div>
     </div>
     <div class="row">
-      {% for service in site.services limit:4 %}
+      {% for product in site.products limit:4 %}
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
         <div class="service_13987">
-          <a href="{{ service.url | prepend: site.baseurl }}" class="mb-3 d-block"><img src="{{ site.baseurl }}/{{ service.image }}" alt="{{ service.title }}" class="img-fluid"></a>
+          <a href="{{ product.url | prepend: site.baseurl }}" class="mb-3 d-block"><img src="{{ site.baseurl }}/{{ product.image }}" alt="{{ product.title }}" class="img-fluid"></a>
           <div class="text">
-            <h3 class="serif mb-3">{{ service.title }}</h3>
-            <p>{{ service.content | markdownify }}</p>
+            <h3 class="serif mb-3">{{ product.title }}</h3>
+            <p>{{ product.content | markdownify }}</p>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@ hero_image: images/feature1.jpg
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-8 mt-lg-3 text-center">
-        <p><a href="{{ site.baseurl }}/services/" class="btn btn-primary">View All</a></p>
+        <p><a href="{{ site.baseurl }}/products/" class="btn btn-primary">View All</a></p>
       </div>
     </div>
   </div>
@@ -41,7 +41,7 @@ hero_image: images/feature1.jpg
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="heading-border-bottom font-weight-bold serif text-white mb-5">Spa Features</h2>
+        <h2 class="heading-border-bottom font-weight-bold serif text-white mb-5">Features</h2>
       </div>
     </div>
     <div class="row">

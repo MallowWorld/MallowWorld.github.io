@@ -1,4 +1,4 @@
 ---
 title: Image 7
-image: images/img_2.jpg
+image: images/watercolor_drawings_7.jpg
 ---

@@ -1,4 +1,5 @@
 ---
 title: Image 3
-image: images/img_3.jpg
+image: images/watercolor_drawings_3.jpg
+published: false
 ---

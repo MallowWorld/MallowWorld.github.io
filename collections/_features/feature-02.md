@@ -1,5 +1,5 @@
 ---
-title: Candle
-icon: flaticon-candle
+title: Artwork
+icon: icon-palette
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, neque, et!

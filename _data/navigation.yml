@@ -2,12 +2,12 @@
   url: /
   footer: true
 
-- title: About
-  url: /about/
-  footer: true
-
 - title: Products
   url: /products/
+  footer: true
+
+- title: About
+  url: /about/
   footer: true
 
 - title: Gallery
@@ -15,7 +15,4 @@
 
 - title: Blog
   url: /blog/
-
-- title: Contact
-  url: /contact/
   footer: true

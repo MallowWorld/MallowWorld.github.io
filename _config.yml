@@ -66,25 +66,25 @@ defaults:
       type: 'posts'
     values:
       layout: post
-      hero_image: images/feature1.jpg
+      hero_image: images/sprinkles_background_1.jpg
   - scope:
       path: ''
       type: 'services'
     values:
       layout: page
-      hero_image: images/feature1.jpg
+      hero_image: images/sprinkles_background_1.jpg
   - scope:
       path: ''
       type: 'products'
     values:
       layout: page
-      hero_image: images/feature1.jpg
+      hero_image: images/sprinkles_background_1.jpg
   - scope:
       path: ''
       type: 'pages'
     values:
       layout: page
-      hero_image: images/feature1.jpg
+      hero_image: images/sprinkles_background_1.jpg
 
 # Exclude from processing.
 exclude:

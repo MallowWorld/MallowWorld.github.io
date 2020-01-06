@@ -1,11 +1,12 @@
 ---
-title: Follow the Mallow
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-  veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.
+title: Mallow World
+description: Printables, Code &amp; Design For Kids
 layout: home
-hero_image: images/feature1.jpg
+hero_image: images/sprinkles_background_1.jpg
 ---
 {% include welcome.html %}
+
+{% include sale.html %}
 
 {% if site.products.size > 0 %}
 <div class="site-section">
@@ -36,8 +37,6 @@ hero_image: images/feature1.jpg
   </div>
 </div>
 {% endif %}
-
-{% include sale.html %}
 
 {% if site.features.size > 0 %}
 <div class="site-section bg-image overlay features_75651" style="background-image: url('{{ site.baseurl }}/{{ page.hero_image }}')">

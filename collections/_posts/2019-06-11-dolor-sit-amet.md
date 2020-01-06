@@ -7,8 +7,8 @@ categories:
 tags:
   - html
   - trends
-hero_image: images/feature1.jpg
-image: images/img_2.jpg
+hero_image: images/sprinkles_background_1.jpg
+image: images/mallowworld_playdough_tools_2.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.
 <!--more-->

@@ -1,6 +1,6 @@
 enabled: true
 title: Why Us?
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!
-label: Learn More
-url: /about/
-image: images/img_1.jpg
+label: Browse Products
+url: /products/
+image: images/leaves_1.jpg

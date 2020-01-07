@@ -1,99 +1,94 @@
+---
 title: Mallow World
+timezone: UTC
+collections:
+  categories:
+    title: Categories
+    output: false
+  drafts:
+    title: Drafts
+    output: false
+  features:
+    title: Features
+    output: false
+  images:
+    title: Gallery
+    output: false
+  posts:
+    title: Posts
+    output: true
+  products:
+    title: Products
+    output: true
+    permalink: "/products/:path/"
+  services:
+    title: Services
+    output: true
+    permalink: "/services/:path/"
+  shops:
+    title: Shops
+    output: false
+  team:
+    title: Team
+    output: true
+    permalink: "/about/:path/"
+  testimonials:
+    title: Testimonials
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    hero_image: images/sprinkles_background_1.jpg
+- scope:
+    path: ''
+    type: services
+  values:
+    layout: page
+    hero_image: images/sprinkles_background_1.jpg
+- scope:
+    path: ''
+    type: products
+  values:
+    layout: page
+    hero_image: images/sprinkles_background_1.jpg
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+    hero_image: images/sprinkles_background_1.jpg
 email: mallowworld@gmail.com
 address: Papillion, NE, United States
-phone: +1 123 456 7890
+phone: "+1 123 456 7890"
 description: Graphic Design, Illustration, and Home Education
 baseurl: ''
 url: ''
 twitter_username: mallowworld
 instagram_username: mallowworld
 facebook_username: mallowworld
-linkedin_username:
-github_username:  MallowWorld
-
-# Build settings
+linkedin_username: 
+github_username: MallowWorld
 markdown: kramdown
 plugins:
-  - jekyll-feed
-  - jekyll-paginate
+- jekyll-feed
+- jekyll-paginate
 permalink: pretty
 paginate: 6
-paginate_path: '/blog/page-:num/'
-
-# Collections settings
-collections:
-  drafts:
-    title: Drafts
-    output: false
-  posts:
-    title: Posts
-    output: true
-    permalink: '/blog/:slug/'
-  services:
-    title: Services
-    output: true
-    permalink: '/services/:path/'
-  images:
-    title: Gallery
-    output: false
-  products:
-    title: Products
-    output: true
-    permalink: '/products/:path/'
-  categories:
-    title: Categories
-    output: false
-  shops:
-    title: Shops
-    output: false
-  features:
-    title: Features
-    output: false
-  testimonials:
-    title: Testimonials
-    output: false
-  team:
-    title: Team
-    output: true
-    permalink: '/about/:path/'
-  uploads:
-    title: Uploads
-    output: true
-defaults:
-  - scope:
-      path: ''
-      type: 'posts'
-    values:
-      layout: post
-      hero_image: images/sprinkles_background_1.jpg
-  - scope:
-      path: ''
-      type: 'services'
-    values:
-      layout: page
-      hero_image: images/sprinkles_background_1.jpg
-  - scope:
-      path: ''
-      type: 'products'
-    values:
-      layout: page
-      hero_image: images/sprinkles_background_1.jpg
-  - scope:
-      path: ''
-      type: 'pages'
-    values:
-      layout: page
-      hero_image: images/sprinkles_background_1.jpg
-
-# Exclude from processing.
+paginate_path: "/blog/page-:num/"
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - LICENSE
-  - README.md
-  - CNAME
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+- LICENSE
+- README.md
+- CNAME

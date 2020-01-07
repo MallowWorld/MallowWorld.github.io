@@ -3,5 +3,5 @@ title: Follow the Mallow
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, consequuntur?
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nesciunt, amet officia soluta, dolores dolor?
 images:
-  - images/feathers_2.jpg
-  - images/feathers_1.jpg
+  - /images/feathers_2.jpg
+  - /images/feathers_1.jpg

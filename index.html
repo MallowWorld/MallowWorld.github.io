@@ -2,7 +2,7 @@
 title: Mallow World
 description: Printables, Code &amp; Design For Kids
 layout: home
-hero_image: images/sprinkles_background_1.jpg
+hero_image: /images/sprinkles_background_1.jpg
 ---
 
 {% include welcome.html %}
@@ -21,7 +21,7 @@ hero_image: images/sprinkles_background_1.jpg
       {% for product in site.products limit:4 %}
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
         <div class="service_13987">
-          <a href="{{ product.url | prepend: site.baseurl }}" class="mb-3 d-block"><img src="{{ site.baseurl }}/{{ product.image }}" alt="{{ product.title }}" class="img-fluid"></a>
+          <a href="{{ product.url | prepend: site.baseurl }}" class="mb-3 d-block"><img src="{{ product.image | prepend: site.baseurl }}" alt="{{ product.title }}" class="img-fluid"></a>
           <div class="text">
             <h3 class="serif mb-3">{{ product.title }}</h3>
             <p>{{ product.content | markdownify }}</p>
@@ -40,7 +40,7 @@ hero_image: images/sprinkles_background_1.jpg
 {% endif %}
 
 {% if site.features.size > 0 %}
-<div class="site-section bg-image overlay features_75651" style="background-image: url('{{ site.baseurl }}/{{ page.hero_image }}')">
+<div class="site-section bg-image overlay features_75651" style="background-image: url('{{ page.hero_image | prepend: site.baseurl }}')">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -77,7 +77,7 @@ hero_image: images/sprinkles_background_1.jpg
     <div>
       <div class="testimonial-2">
         <div class="d-flex v-card align-items-center mb-4">
-          <img src="{{ site.baseurl }}/{{ testimonial.image }}" alt="Image" class="img-fluid mr-3">
+          <img src="{{ testimonial.image | prepend: site.baseurl }}" alt="Image" class="img-fluid mr-3">
           <span>{{ testimonial.title }}</span>
         </div>
         <blockquote>

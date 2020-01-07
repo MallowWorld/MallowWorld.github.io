@@ -1,15 +1,17 @@
 ---
 title: Lorem ipsum dolor sit amet
-author: Admin
+date: 2018-06-30 00:00:00 Z
 categories:
-  - Design
-  - Events
+- Design
+- Events
 tags:
-  - html
-  - trends
+- html
+- trends
+author: Admin
 hero_image: images/sprinkles_background_1.jpg
 image: images/mallowworld_playdough_tools_7.jpg
 ---
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.
 <!--more-->
 

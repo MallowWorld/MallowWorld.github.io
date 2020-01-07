@@ -3,5 +3,5 @@ title: WellSpa Spa &amp; Wellness
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, consequuntur?
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nesciunt, amet officia soluta, dolores dolor?
 images:
-  - images/about_2.jpg
-  - images/about_1.jpg
+  - /images/about_2.jpg
+  - /images/about_1.jpg

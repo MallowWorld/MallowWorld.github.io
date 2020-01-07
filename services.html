@@ -4,7 +4,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
   veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.
 layout: minimal
 permalink: /services/
-hero_image: images/hero_1.jpg
+hero_image: /images/hero_1.jpg
 ---
 <div class="site-section">
   <div class="container">
@@ -17,7 +17,7 @@ hero_image: images/hero_1.jpg
       {% for service in site.services %}
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-5">
         <div class="service_13987">
-          <a href="{{ service.url | prepend: site.baseurl }}" class="mb-3 d-block"><img src="{{ site.baseurl }}/{{ service.image }}" alt="{{ service.title }}" class="img-fluid"></a>
+          <a href="{{ service.url | prepend: site.baseurl }}" class="mb-3 d-block"><img src="{{ service.image | prepend: site.baseurl }}" alt="{{ service.title }}" class="img-fluid"></a>
           <div class="text">
             <h3 class="serif mb-3">{{ service.title }}</h3>
             <p>{{ service.content | markdownify }}</p>

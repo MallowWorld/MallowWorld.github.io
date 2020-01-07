@@ -4,7 +4,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
   veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.
 layout: minimal
 permalink: /about/
-hero_image: images/hero_1.jpg
+hero_image: /images/hero_1.jpg
 ---
 {% include welcome.html %}
 
@@ -19,7 +19,7 @@ hero_image: images/hero_1.jpg
       {% for person in site.team %}
       <div class="col-lg-4 col-md-6 mb-5">
         <div class="post-entry-1 h-100 person-1">
-          <img src="{{ site.baseurl }}/{{ person.image }}" alt="{{ person.name }}" class="img-fluid">
+          <img src="{{ person.image | prepend: site.baseurl }}" alt="{{ person.name }}" class="img-fluid">
           <div class="post-entry-1-contents">
             <span class="meta">{{ person.title }}</span>
             <h2>{{ person.name }}</h2>

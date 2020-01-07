@@ -7,8 +7,8 @@ categories:
 tags:
   - html
   - trends
-hero_image: images/hero_1.jpg
-image: images/img_3.jpg
+hero_image: /images/hero_1.jpg
+image: /images/img_3.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.
 <!--more-->

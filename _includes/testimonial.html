@@ -10,8 +10,8 @@
       </div>
       <div class="col-md-6">
         <div class="d-flex align-items-center">
-          <div class="bg-img-1 mr-md-4 mt-md-5" style="background-image: url('{{ site.baseurl }}/{{ site.data.testimonial.images[0] }}');"></div>
-          <div class="bg-img-1" style="background-image: url('{{ site.baseurl }}/{{ site.data.testimonial.images[1] }}');"></div>
+          <div class="bg-img-1 mr-md-4 mt-md-5" style="background-image: url('{{ site.data.testimonial.images[0] | prepend: site.baseurl }}');"></div>
+          <div class="bg-img-1" style="background-image: url('{{ site.data.testimonial.images[1] | prepend: site.baseurl }}');"></div>
         </div>
       </div>
     </div>

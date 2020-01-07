@@ -4,7 +4,7 @@ permalink: "/gallery/"
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis
   in tenetur doloremque, maiores doloribus officia iste. Dolores.
 layout: minimal
-hero_image: images/sprinkles_background_1.jpg
+hero_image: /images/sprinkles_background_1.jpg
 ---
 
 <div class="site-section">
@@ -17,7 +17,7 @@ hero_image: images/sprinkles_background_1.jpg
     <div class="row">
       {% for image in site.images %}
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-5">
-        <a href="{{ site.baseurl }}/{{ image.image }}" data-fancybox="gal" class=""><img src="{{ site.baseurl }}/{{ image.image }}" alt="{{ image.title }}" class="img-fluid"></a>
+        <a href="{{ image.image | prepend: site.baseurl }}" data-fancybox="gal" class=""><img src="{{ image.image | prepend: site.baseurl }}" alt="{{ image.title }}" class="img-fluid"></a>
       </div>
       {% endfor %}
     </div>

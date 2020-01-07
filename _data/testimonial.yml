@@ -3,5 +3,5 @@ title: Jean Doe
 subtitle: Customer
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, illo.
 images:
-  - images/collections_1.jpg
-  - images/collections_2.jpg
+  - /images/collections_1.jpg
+  - /images/collections_2.jpg

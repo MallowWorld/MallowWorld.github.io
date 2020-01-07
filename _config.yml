@@ -21,7 +21,6 @@ paginate: 6
 paginate_path: '/blog/page-:num/'
 
 # Collections settings
-collections_dir: collections
 collections:
   drafts:
     title: Drafts

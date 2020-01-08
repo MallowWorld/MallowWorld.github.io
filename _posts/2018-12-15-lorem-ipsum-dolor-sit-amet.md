@@ -8,8 +8,8 @@ tags:
 - html
 - trends
 author: Admin
-hero_image: /images/sprinkles_background_1.jpg
-image: /images/mallowworld_playdough_tools_4.jpg
+hero_image: "/images/sprinkles_background_1.jpg"
+image: "/images/mallowworld_playdough_tools_4.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.

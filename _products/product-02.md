@@ -5,7 +5,7 @@ categories:
 - printables
 tags:
 - printables
-image: "/uploads/zoo_passport.jpg"
+image: "/uploads/zoo_passport_1.jpg"
 url: https://www.teacherspayteachers.com/Product/Zoo-Passport-Animal-Scavenger-Hunt-1886318
 ---
 

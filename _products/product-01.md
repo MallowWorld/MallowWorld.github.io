@@ -1,19 +1,7 @@
 ---
-title: Printed Material
-permalink: "/products/printed-material/"
-image: "/images/zoo_passport_1.jpg"
+title: 'C-Quince: Kids in Code'
+permalink: "/products/c-quince/"
+image: "/uploads/c-quince_1.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eius recusandae, porro ipsa necessitatibus autem!
-
-this is a [second](https://google.com) **paragraph**
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-**bold text**
-
-*italic text*
+Screen free and hands on code themed activities and games designed to teach beginning computer science concepts to young children.

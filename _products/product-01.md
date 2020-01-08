@@ -1,6 +1,11 @@
 ---
 title: 'C-Quince: Kids in Code'
 permalink: "/products/c-quince/"
+categories:
+- printables
+tags:
+- code
+- printables
 image: "/uploads/c-quince_1.jpg"
 ---
 

@@ -20,7 +20,7 @@ layout: default
           <a href="{{ service.url | prepend: site.baseurl }}" class="mb-3 d-block"><img src="{{ service.image | prepend: site.baseurl }}" alt="{{ service.title }}" class="img-fluid"></a>
           <div class="text">
             <h3 class="serif mb-3">{{ service.title }}</h3>
-            <p>{{ service.excerpt | markdownify }}</p>
+            <p>{{ service.excerpt | markdownify | strip_html }}</p>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ layout: default
           <a href="{{ product.url | prepend: site.baseurl }}" class="mb-3 d-block"><img src="{{ product.image | prepend: site.baseurl }}" alt="{{ product.title }}" class="img-fluid"></a>
           <div class="text">
             <h3 class="serif mb-3">{{ product.title }}</h3>
-            <p>{{ product.excerpt | markdownify }}</p>
+            <p>{{ product.excerpt | markdownify | strip_html }}</p>
           </div>
         </div>
       </div>

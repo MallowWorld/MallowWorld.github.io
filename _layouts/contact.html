@@ -1,19 +1,12 @@
 ---
-title: Contact Us
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-  veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.
-subtitle: Contact us using the form below
-more_info: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!
 layout: minimal
-permalink: /contact/
-hero_image: /images/hero_1.jpg
 ---
 <div class="site-section bg-light" id="contact-section">
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-7 text-center mb-5">
-        <h2>{{ page.subtitle }}</h2>
-        <p>{{ page.more_info }}</p>
+        <h2>{{ site.data.config.pages.contact.heading }}</h2>
+        {{ content | markdownify }}
       </div>
     </div>
     <div class="row">

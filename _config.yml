@@ -98,7 +98,7 @@ defaults:
       path: ''
       type: 'products'
     values:
-      layout: page
+      layout: product
       hero_image: /images/hero_1.jpg
   - scope:
       path: ''

@@ -37,6 +37,10 @@ collections:
     title: Categories
     output: true
     permalink: '/blog/categories/:path/'
+  authors:
+    title: Authors
+    output: true
+    permalink: '/blog/authors/:path/'
   services:
     title: Services
     output: true
@@ -69,27 +73,39 @@ defaults:
       path: ''
       type: 'posts'
     values:
+      author: Admin
       layout: post
+      hero_image: /images/hero_1.jpg
   - scope:
       path: ''
       type: 'cats'
     values:
       layout: category
+      hero_image: /images/hero_1.jpg
+  - scope:
+      path: ''
+      type: 'authors'
+    values:
+      layout: author
+      hero_image: /images/hero_1.jpg
   - scope:
       path: ''
       type: 'services'
     values:
       layout: page
+      hero_image: /images/hero_1.jpg
   - scope:
       path: ''
       type: 'products'
     values:
       layout: page
+      hero_image: /images/hero_1.jpg
   - scope:
       path: ''
       type: 'pages'
     values:
       layout: page
+      hero_image: /images/hero_1.jpg
 
 # Exclude from processing.
 exclude:

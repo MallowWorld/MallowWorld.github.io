@@ -6,6 +6,8 @@ services:
 products:
   heading: Our Products
   url: /products/
+testimonials:
+  heading: Testimonials
 gallery:
   heading: See Our Galleries
 contact:
@@ -14,3 +16,5 @@ blog:
   url: /blog/
 categories:
   url: /blog/categories/
+authors:
+  url: /blog/authors/

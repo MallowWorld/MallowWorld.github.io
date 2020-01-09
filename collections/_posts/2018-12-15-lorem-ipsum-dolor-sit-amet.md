@@ -3,7 +3,7 @@ title: Lorem ipsum dolor sit amet
 author: Admin
 categories:
   - Design
-  - Events
+  - Creative
 tags:
   - html
   - trends

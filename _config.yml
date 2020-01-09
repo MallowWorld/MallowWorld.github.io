@@ -33,6 +33,10 @@ collections:
     title: Posts
     output: true
     permalink: '/blog/:slug/'
+  cats:
+    title: Categories
+    output: true
+    permalink: '/blog/categories/:path/'
   services:
     title: Services
     output: true
@@ -44,9 +48,6 @@ collections:
     title: Products
     output: true
     permalink: '/products/:path/'
-  categories:
-    title: Categories
-    output: false
   shops:
     title: Shops
     output: false
@@ -69,6 +70,11 @@ defaults:
       type: 'posts'
     values:
       layout: post
+  - scope:
+      path: ''
+      type: 'cats'
+    values:
+      layout: category
   - scope:
       path: ''
       type: 'services'

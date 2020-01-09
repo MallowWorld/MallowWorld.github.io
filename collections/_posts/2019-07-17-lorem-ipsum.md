@@ -2,8 +2,8 @@
 title: Lorem ipsum dolor sit amet
 author: Admin
 categories:
+  - Creative
   - Design
-  - Events
 tags:
   - html
   - trends

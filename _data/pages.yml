@@ -10,3 +10,7 @@ gallery:
   heading: See Our Galleries
 contact:
   heading: Contact us using the form below
+blog:
+  url: /blog/
+categories:
+  url: /blog/categories/

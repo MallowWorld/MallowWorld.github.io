@@ -22,9 +22,9 @@ layout: default
 
         <div class="pt-5">
           <p>Categories:
-            {% for cat in page.categories %}{% if cat != page.categories.first %}, {% endif %}<a href="{{ site.baseurl }}/categories/{{ cat }}">{{ cat }}</a>{% endfor %}
+            {% for cat in page.categories %}{% if cat != page.categories.first %}, {% endif %}<a href="{{ cat | prepend: site.data.pages.categories.url | prepend: site.baseurl }}/">{{ cat }}</a>{% endfor %}
             Tags:
-            {% for tag in page.tags %}{% if tag != page.tags.first %}, {% endif %}<a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a>{% endfor %}
+            {% for tag in page.tags %}{% if tag != page.tags.first %}, {% endif %}{{ tag }}{% endfor %}
           </p>
         </div>
 
@@ -159,8 +159,8 @@ layout: default
         <div class="sidebar-box">
           <div class="categories">
             <h3>Categories</h3>
-            {% for category in site.categories %}
-            <li><a href="{{ site.baseurl }}/categories/{{ category.name }}">{{ category.title }}</a></li>
+            {% for category in site.cats %}
+            <li><a href="{{ category.title | prepend: site.data.pages.categories.url | prepend: site.baseurl }}/">{{ category.title }}</a></li>
             {% endfor %}
           </div>
         </div>

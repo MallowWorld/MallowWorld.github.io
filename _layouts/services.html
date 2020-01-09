@@ -15,7 +15,7 @@ layout: minimal
           <a href="{{ service.url | prepend: site.baseurl }}" class="mb-3 d-block"><img src="{{ service.image | prepend: site.baseurl }}" alt="{{ service.title }}" class="img-fluid"></a>
           <div class="text">
             <h3 class="serif mb-3">{{ service.title }}</h3>
-            <p>{{ service.content | markdownify }}</p>
+            <p>{{ service.excerpt | markdownify }}</p>
           </div>
         </div>
       </div>

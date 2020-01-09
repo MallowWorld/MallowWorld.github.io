@@ -1,0 +1,12 @@
+about:
+  heading: Our Team
+services:
+  heading: Our Services
+  url: /services/
+products:
+  heading: Our Products
+  url: /products/
+gallery:
+  heading: See Our Galleries
+contact:
+  heading: Contact us using the form below

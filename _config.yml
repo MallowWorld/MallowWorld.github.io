@@ -18,7 +18,6 @@ collections:
   posts:
     title: Posts
     output: true
-    permalink: "/blog/:title/"
   products:
     title: Products
     output: true
@@ -50,17 +49,17 @@ defaults:
     image: 
 - scope:
     path: ''
-    type: 'cats'
+    type: cats
   values:
     layout: category
-    hero_image: /images/hero_1.jpg
+    hero_image: "/images/hero_1.jpg"
 - scope:
     path: ''
-    type: 'authors'
+    type: authors
   values:
     layout: author
-    hero_image: /images/hero_1.jpg
-    image:
+    hero_image: "/images/hero_1.jpg"
+    image: 
 - scope:
     path: ''
     type: services

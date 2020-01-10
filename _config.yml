@@ -53,13 +53,13 @@ defaults:
     type: cats
   values:
     layout: category
-    hero_image: "/images/hero_1.jpg"
+    hero_image: "/images/sprinkles_background_1.jpg"
 - scope:
     path: ''
     type: authors
   values:
     layout: author
-    hero_image: "/images/hero_1.jpg"
+    hero_image: "/images/sprinkles_background_1.jpg"
     image: 
 - scope:
     path: ''

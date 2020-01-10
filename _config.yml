@@ -44,6 +44,7 @@ defaults:
     path: ''
     type: posts
   values:
+    permalink: "/blog/:title/"
     layout: post
     hero_image: "/images/sprinkles_background_1.jpg"
     image: 

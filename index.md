@@ -1,8 +1,6 @@
 ---
-title: Spa Which You Love
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-  veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.
+title: Mallow World
+description: Printables, Code &amp; Design For Kids
 layout: home
-learn_more: true
-hero_image: /images/hero_1.jpg
+hero_image: "/images/sprinkles_background_1.jpg"
 ---

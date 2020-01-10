@@ -2,9 +2,9 @@
 title: Mallow World
 timezone: UTC
 collections:
-  categories:
+  cats:
     title: Categories
-    output: false
+    output: true
   features:
     title: Features
     output: false
@@ -14,6 +14,11 @@ collections:
   posts:
     title: Posts
     output: true
+    permalink: "/blog/:slug/"
+  authors:
+    title: Authors
+    output: true
+    permalink: "/blog/authors/:path/"
   products:
     title: Products
     output: true
@@ -42,21 +47,25 @@ defaults:
   values:
     layout: post
     hero_image: "/images/sprinkles_background_1.jpg"
-    image: 
+    image:
 - scope:
     path: ''
     type: services
   values:
     layout: page
     hero_image: "/images/sprinkles_background_1.jpg"
-    image: 
+    image:
+    additional_images:
 - scope:
     path: ''
     type: products
   values:
-    layout: page
+    layout: product
     hero_image: "/images/sprinkles_background_1.jpg"
-    image: 
+    image:
+    additional_images:
+    price: $0
+    store_url:
 - scope:
     path: ''
     type: pages
@@ -69,7 +78,7 @@ defaults:
   values:
     layout: page
     hero_image: "/images/sprinkles_background_1.jpg"
-    image: 
+    image:
 email: mallowworld@gmail.com
 address: Papillion, NE, United States
 phone: "+1 123 456 7890"
@@ -79,7 +88,7 @@ url: ''
 twitter_username: mallowworld
 instagram_username: mallowworld
 facebook_username: mallowworld
-linkedin_username: 
+linkedin_username:
 github_username: MallowWorld
 markdown: kramdown
 plugins:

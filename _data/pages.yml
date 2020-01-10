@@ -1,0 +1,23 @@
+about:
+  heading: Our Team
+services:
+  heading: Our Services
+  url: /services/
+products:
+  heading: Our Products
+  url: /products/
+product:
+  labels:
+    buy_now: Buy Now
+testimonials:
+  heading: Testimonials
+gallery:
+  heading: See Our Galleries
+contact:
+  heading: Contact us using the form below
+blog:
+  url: /blog/
+categories:
+  url: /blog/categories/
+authors:
+  url: /blog/authors/

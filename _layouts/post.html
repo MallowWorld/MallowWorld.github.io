@@ -23,12 +23,11 @@ layout: default
 
         <div class="pt-5">
           <p>Categories:
-            {% for cat in page.categories %}{% if cat != page.categories.first %}, {% endif %}<a href="{{ site.baseurl }}/categories/{{ cat }}">{{ cat }}</a>{% endfor %}
+            {% for cat in page.categories %}{% if cat != page.categories.first %}, {% endif %}<a href="{{ cat | prepend: site.data.pages.categories.url | prepend: site.baseurl }}/">{{ cat }}</a>{% endfor %}
             Tags:
-            {% for tag in page.tags %}{% if tag != page.tags.first %}, {% endif %}<a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a>{% endfor %}
+            {% for tag in page.tags %}{% if tag != page.tags.first %}, {% endif %}{{ tag }}{% endfor %}
           </p>
         </div>
-
 
         {% if page.comments %}
         <div class="pt-5">
@@ -160,18 +159,23 @@ layout: default
         <div class="sidebar-box">
           <div class="categories">
             <h3>Categories</h3>
-            {% for category in site.categories %}
-            <li><a href="{{ site.baseurl }}/categories/{{ category.name }}">{{ category.title }}</a></li>
+            {% for category in site.cats %}
+            <li><a href="{{ category.title | prepend: site.data.pages.categories.url | prepend: site.baseurl }}/">{{ category.title }}</a></li>
             {% endfor %}
           </div>
         </div>
 
+        {% for author in site.authors %}
+        {% if author.title == page.author %}
         <div class="sidebar-box">
           <img src="{{ site.baseurl }}/images/person_1.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid mb-4 w-50 rounded-circle">
-          <h3 class="text-black">About {{ page.author }}</h3>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          <p><a href="{{ site.baseurl }}/about/{{ page.author }}.html" class="btn btn-primary btn-md text-white">Read More</a></p>
+          <h3 class="text-black">About {{ author.title }}</h3>
+          <p>{{ author.excerpt | markdownify | strip_html }}</p>
+          <p><a href="{{ author.title | prepend: site.data.pages.authors.url | prepend: site.baseurl }}/" class="btn btn-primary btn-md text-white">Read More</a></p>
         </div>
+        {% break %}
+        {% endif %}
+        {% endfor %}
 
         {% for section in site.data.sidebar %}
         <div class="sidebar-box">

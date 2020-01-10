@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{% include animated-parallax.html %}
+
+<div class="site-section bg-light" id="contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 blog-content">
+        <h2 class="heading-border-bottom font-weight-bold serif text-black mb-5 text-center">{{ page.title }}</h2>
+        {{ content | markdownify }}
+        <p class="text-center text-secondary lead"><span class="font-weight-bold">{{ page.price }}</span></p>
+        <p class="text-center"><a href="{{ page.store_url | prepend: site.baseurl }}" class="btn btn-primary" target="_blank">{{ site.data.pages.product.labels.buy_now }}</a></p>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          {% if page.image %}
+          <div class="row">
+            <div class="col-md-12 mb-5">
+              <a href="{{ page.image | prepend: site.baseurl }}" data-fancybox="gal" class=""><img src="{{ page.image | prepend: site.baseurl }}" alt="{{ image.title }}" class="img-fluid"></a>
+            </div>
+          </div>
+          {% endif %}
+
+          {% if page.additional_images %}
+          <div class="row justify-content-center">
+            {% for image in page.additional_images %}
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-5">
+              <a href="{{ image | prepend: site.baseurl }}" data-fancybox="gal" class=""><img src="{{ image | prepend: site.baseurl }}" alt="{{ page.title }}" class="img-fluid"></a>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

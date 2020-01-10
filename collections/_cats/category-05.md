@@ -1,6 +1,7 @@
 ---
 title: Web Development
+permalink: "/blog/categories/Web Development/"
 description: Lorem ipsum dolor sit amet
-permalink: /blog/categories/Web Development/
-hero_image: /images/hero_1.jpg
+hero_image: "/images/hero_1.jpg"
 ---
+

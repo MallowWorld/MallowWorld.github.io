@@ -1,6 +1,7 @@
 ---
 title: News
+permalink: "/blog/categories/News/"
 description: Lorem ipsum dolor sit amet
-permalink: /blog/categories/News/
-hero_image: /images/hero_1.jpg
+hero_image: "/images/hero_1.jpg"
 ---
+

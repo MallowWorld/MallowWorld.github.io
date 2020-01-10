@@ -1,6 +1,7 @@
 ---
 title: Design
+permalink: "/blog/categories/Design/"
 description: Lorem ipsum dolor sit amet
-permalink: /blog/categories/Design/
-hero_image: /images/hero_1.jpg
+hero_image: "/images/hero_1.jpg"
 ---
+

@@ -1,6 +1,7 @@
 ---
 title: HTML
+permalink: "/blog/categories/HTML/"
 description: Lorem ipsum dolor sit amet
-permalink: /blog/categories/HTML/
-hero_image: /images/hero_1.jpg
+hero_image: "/images/hero_1.jpg"
 ---
+

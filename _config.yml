@@ -76,6 +76,7 @@ defaults:
       author: Admin
       layout: post
       hero_image: /images/hero_1.jpg
+      image:
   - scope:
       path: ''
       type: 'cats'
@@ -88,18 +89,25 @@ defaults:
     values:
       layout: author
       hero_image: /images/hero_1.jpg
+      image:
   - scope:
       path: ''
       type: 'services'
     values:
       layout: page
       hero_image: /images/hero_1.jpg
+      image:
+      additional_images:
   - scope:
       path: ''
       type: 'products'
     values:
       layout: product
       hero_image: /images/hero_1.jpg
+      image:
+      additional_images:
+      price: $0
+      store_url:
   - scope:
       path: ''
       type: 'pages'

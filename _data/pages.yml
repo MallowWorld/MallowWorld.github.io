@@ -6,6 +6,9 @@ services:
 products:
   heading: Our Products
   url: /products/
+product:
+  labels:
+    buy_now: Buy Now
 testimonials:
   heading: Testimonials
 gallery:

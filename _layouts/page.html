@@ -5,11 +5,6 @@ layout: default
 
 <div class="site-section bg-light" id="contact-section">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="heading-border-bottom font-weight-bold serif text-black mb-5 text-center">{{ page.title }}</h2>
-      </div>
-    </div>
     {% if page.image %}
     <div class="row justify-content-center">
       <div class="col-md-6 mb-5">
@@ -28,6 +23,7 @@ layout: default
       {% endif %}
     </div>
     {% endif %}
+
     <div class="row">
       <div class="col-md-12 blog-content">
         {{ content | markdownify }}
